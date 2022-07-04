@@ -21,6 +21,11 @@ public class Delivery{
     @Embedded
     private Address address;
 
+    public Delivery( Address address ){
+        this.address = address;
+    }
+
     @Enumerated( EnumType.STRING )
     private DeliveryStatus status;
+
 }
